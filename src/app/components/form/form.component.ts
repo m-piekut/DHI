@@ -19,7 +19,11 @@ export class FormComponent implements OnInit {
   //pokazywanie panelu bocznego
   show(){
     let aside: any = document.querySelector('.aside')
-    aside.style.width = '250px'
+    if(aside.style.width === '250px'){
+      aside.style.width = '0px'
+    }else{
+      aside.style.width = '250px'
+    }
   }
   //czyszczenie formularza
   clear(){
@@ -51,14 +55,14 @@ export class FormComponent implements OnInit {
       alert('Prosze wybrać typ.')
       return;
     }
-    if(this.params === "[0]"){
+    if(this.params === "[0]"|| this.params ===  "[1]"){
       console.log(this.params)
       alert('Prosze dodać punkt na mapie.')
       console.log(this.params)
       return;
     }
 
-
+    //wyswietlanie do konsoli
     console.log(this.params);
     const newFlowMeter = {
       name : this.name,

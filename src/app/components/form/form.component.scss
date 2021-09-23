@@ -17,7 +17,10 @@
     background-color: #0B4566;
     color: #fff;
     font-size: 25px;
-
+    cursor: pointer;
+    &:hover{
+      opacity: .8;
+    }
   }
   &__wrapper{
     background-color: #fff;
@@ -82,6 +85,9 @@
       color: #31BAF2;
       font-weight: bold;
       cursor: pointer;
+      &:hover{
+        opacity: .6;
+      }
       &--accept{
         background-color: #31BAF2;
         position: relative;

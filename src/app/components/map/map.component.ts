@@ -29,8 +29,9 @@ export class MapComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-
+    //rysowanie mapy
     this.initMap();
+    //dodawanie punktu na mapie
     this.map.on("click",( e : any) => {
       if(this.params == 0){
           let circle : any
@@ -46,6 +47,7 @@ export class MapComponent implements OnInit {
     }
   );
 }
+//resetowanie parametrów punktu
 addPoint(){
   this.params = 0
 }
