@@ -1,0 +1,66 @@
+<div class="przeplywy">
+  <div class="przeplywy__items" [ngClass]=[display]>
+
+    <div class="przeplywy__item">
+      <p>Przepływ nieznany</p>
+      <div class="przeplywy__iconWrapper przeplywy__iconWrapper--1">
+        <div class="icon"></div>
+
+      </div>
+    </div>
+    <div class="przeplywy__item">
+      <p>Przepływ -SUW/ZUW</p>
+      <div class="przeplywy__iconWrapper przeplywy__iconWrapper--2">
+        <div class="icon"></div>
+
+      </div>
+    </div>
+    <div class="przeplywy__item">
+      <p>Przepływ - Zbiornik</p>
+      <div class="przeplywy__iconWrapper przeplywy__iconWrapper--3">
+        <div class="icon"></div>
+
+      </div>
+    </div>
+    <div class="przeplywy__item">
+      <p>Przepływ międzystrefowy</p>
+      <div class="przeplywy__iconWrapper przeplywy__iconWrapper--4">
+        <div class="icon"></div>
+
+      </div>
+    </div>
+    <div class="przeplywy__item">
+      <p>Sprzedaż - Online</p>
+      <div class="przeplywy__iconWrapper przeplywy__iconWrapper--5">
+        <div class="icon"></div>
+
+      </div>
+    </div>
+    <div class="przeplywy__item">
+      <p>Sprzedaż - odczyt co 12h</p>
+      <div class="przeplywy__iconWrapper przeplywy__iconWrapper--6">
+        <div class="icon"></div>
+
+      </div>
+    </div>
+    <div class="przeplywy__item">
+      <p>Sprzedaż - odczyt ręczny</p>
+      <div class="przeplywy__iconWrapper przeplywy__iconWrapper--7">
+        <div class="icon"></div>
+
+      </div>
+    </div>
+    <div class="przeplywy__item">
+      <p>Przepływ wirtualny</p>
+      <div class="przeplywy__iconWrapper przeplywy__iconWrapper--8">
+        <div class="icon"></div>
+
+      </div>
+    </div>
+  </div>
+    <div (click)="showItems()" class="przeplywy__item przeplywy__item--p">
+      <p >Legenda przepływu</p>
+      <button  [ngClass]=[rotate]><i class="fas fa-chevron-down"></i></button>
+    </div>
+  </div>
+

@@ -1,0 +1,102 @@
+.aside{
+  height: calc(100vh);
+  position: fixed;
+  z-index: 10;
+  width: 0px;
+  top: 0;
+  right: 0;
+  background-color: #F8F8F8;
+  margin-top: 43px;
+  border: 1px solid #DBE4E9;
+  &__show{
+    position: absolute;
+    top: 50%;
+    left: -50px;
+    width: 50px;
+    height: 50px;
+    background-color: #0B4566;
+    color: #fff;
+    font-size: 25px;
+
+  }
+  &__wrapper{
+    background-color: #fff;
+    border-bottom: 1px solid #DBE4E9;
+  }
+  &__title{
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 1px solid #DBE4E9;
+  }
+  h6{
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  .instruction{
+    font-size: 1.2rem;
+    padding: 10px 10px;
+    border-bottom: 1px solid #DBE4E9;
+    &__title{
+      margin: 10px 0;
+    }
+    &__text{
+      span{
+        color: #31BAF2;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .form{
+    margin: 5px 10px;
+    display: flex;
+    flex-direction: column;
+    &__title{
+      margin: 10px 0;
+    }
+    label{
+      color: #8FA9B8;
+    }
+    &__input{
+      margin-top: 2px;
+      margin-bottom: 10px;
+      background-color: transparent;
+      border: none;
+      border-bottom: 1px solid #86A2B3;
+      color: black;
+    }
+    select{
+      padding: 0;
+    }
+    &__add{
+      background-color: #31BAF2;
+      color: #fff;
+      width: 100%;
+    }
+    &__button{
+      width: 100px;
+      height: 40px;
+      border-radius: 5%;
+      border: 2px solid #31BAF2;
+      color: #31BAF2;
+      font-weight: bold;
+      cursor: pointer;
+      &--accept{
+        background-color: #31BAF2;
+        position: relative;
+        z-index: 1;
+        color: #fff;
+      }
+      &--add{
+        width: 100%;
+      }
+    }
+    &__buttons{
+      display: flex;
+      justify-content: space-between;
+      margin: 15px 0;
+    }
+  }
+
+}

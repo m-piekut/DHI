@@ -1,0 +1,17 @@
+header{
+  width: 100%;
+  position: relative;
+  background-color: #F2F5F7;
+  height: 42px;
+  z-index: 10;
+  .leftWrapper{
+    font-size: 12px;
+  }
+  .pMap{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+

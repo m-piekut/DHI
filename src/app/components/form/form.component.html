@@ -1,0 +1,30 @@
+<aside class="aside">
+  <button class="aside__show" (click)="show()"><i class="fas fa-plus"></i></button>
+  <div class="aside__wrapper">
+    <h2 class="aside__title">Przepływomierz</h2>
+    <div class="instruction">
+      <h6 class="instruction__title">Instrukcja</h6>
+      <p class="instruction__text">Wypełnij danie i kliknij <span>dodaj punkt</span>. Następnie wybierz punkt na mapie i kliknij <span>zatwierdź</span></p>
+    </div>
+    <form (ngSubmit)="onSubmit()" class="form">
+      <h6 class="form__title">Dodaj nowy przepływomierz</h6>
+      <label for="name">Nazwa</label>
+      <input class="form__input" type="text" placeholder="Przykładowa nazwa" id="name" [(ngModel)]="name" name="name">
+      <label for="type">Typ</label>
+      <select class="form__input" name="type" id="type" [(ngModel)]="type">
+        <option value="Przepływ nieznany">Przepływ nieznany</option>
+        <option value="Przepływ - SUW/ZUW">Przepływ - SUW/ZUW</option>
+        <option value="Przepływ - Zbiornik">Przepływ - Zbiornik</option>
+        <option value="Przepływ międzystrefowy">Przepływ międzystrefowy</option>
+        <option value="Przepływ wirtualny">Przepływ wirtualny</option>
+      </select>
+      <label for="flowValue">Średnia wartość Przepływu [m3/dzień]</label>
+      <input class="form__input" type="flowValue" name="flowValue" [(ngModel)]="flowValue" id="flowValue">
+      <button class="form__button form__button--add" (click)="onClick()" type="button">Dodaj punkt</button>
+      <div class="form__buttons">
+        <button (click)="clear()" class="form__button" type="button">Wyczyść</button>
+        <button class="form__button form__button--accept" type="submit">Zatwierdź</button>
+      </div>
+    </form>
+  </div>
+</aside>
